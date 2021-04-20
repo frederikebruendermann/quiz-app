@@ -1,0 +1,12 @@
+.card__background {
+  background-color: blanchedalmond;
+}
+
+.card__button {
+  font-size: 17px;
+  background-color: burlywood;
+}
+
+.card__tag-list {
+  list-style: square;
+}
