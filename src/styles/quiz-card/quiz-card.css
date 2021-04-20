@@ -1,12 +1,41 @@
-.card__background {
-  background-color: blanchedalmond;
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  padding: 15px;
+  margin: 15px;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
-.card__button {
-  font-size: 17px;
-  background-color: burlywood;
+.card__heading {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
 }
 
 .card__tag-list {
   list-style: square;
+  display: flex;
+  flex-flow: column wrap;
+  line-height: 2rem;
+  margin: 15px 0;
+}
+
+.card__tag-tag {
+  background: var(--color-highlight);
+}
+
+.card__button {
+  width: 70%;
+  font-size: 17px;
+  background-color: var(--color-highlight);
+  color: var(--color-white);
+  transition-duration: 0.4s;
+}
+
+.card__button:hover {
+  background-color: var(--color-hover);
+  color: white;
 }
