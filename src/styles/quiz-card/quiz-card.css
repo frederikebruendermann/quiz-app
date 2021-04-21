@@ -1,6 +1,5 @@
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 4px;
   background-color: var(--color-primary);
   color: var(--color-black);
