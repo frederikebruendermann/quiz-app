@@ -10,6 +10,14 @@ body {
   font-family: sans-serif;
   max-width: 600px;
   height: 100vh;
+  margin: 0px;
+}
+
+.app-main {
+  display: grid;
+  place-items: center;
+  grid-gap: 26px;
+  overflow-y: scroll;
 }
 
 input,

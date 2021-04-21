@@ -4,9 +4,9 @@
   background-color: var(--color-primary);
   color: var(--color-black);
   padding: 15px;
-  margin: 15px;
   font-family: 'Alegreya Sans', sans-serif;
   position: relative;
+  max-width: 250px;
 }
 
 .card__heading {
@@ -30,7 +30,9 @@
 
 .card__button {
   width: 70%;
-  font-size: 17px;
+  font-size: 15px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
   background-color: var(--color-highlight);
   color: var(--color-white);
   transition-duration: 0.4s;
@@ -53,6 +55,17 @@
 }
 
 .card__bookmark--selected {
-  border: 20px solid var(--color-highlight);
+  border: 25px solid var(--color-highlight);
   border-bottom-color: transparent;
+}
+
+.card:first-child {
+  margin-top: 15px;
+}
+
+.card__tag-list li {
+  background-color: var(--color-secondary);
+  color: black;
+  padding: 3px;
+  border-radius: 3px;
 }
