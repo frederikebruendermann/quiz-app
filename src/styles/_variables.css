@@ -1,5 +1,9 @@
 :root {
   --color-white: #fefefe;
   --color-black: #111;
-  --color-primary: #333;
+  --color-primary: #fcf3eb;
+  --color-highlight: #91bfae;
+  --color-secondary: #fde9dc;
+  --color-teritary: #cca183;
+  --color-hover: #4a7e6b;
 }

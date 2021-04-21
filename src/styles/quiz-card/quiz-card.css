@@ -1,0 +1,58 @@
+.card {
+  display: grid;
+  gap: 4px;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  padding: 15px;
+  margin: 15px;
+  font-family: 'Alegreya Sans', sans-serif;
+  position: relative;
+}
+
+.card__heading {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.card__tag-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: smaller;
+  margin-left: -40px;
+}
+
+.card__tag {
+  background: var(--color-highlight);
+}
+
+.card__button {
+  width: 70%;
+  font-size: 17px;
+  background-color: var(--color-highlight);
+  color: var(--color-white);
+  transition-duration: 0.4s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__button:hover {
+  background-color: var(--color-hover);
+  color: white;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  border: 25px solid lightgrey;
+  border-bottom-color: transparent;
+  height: 10px;
+}
+
+.card__bookmark--selected {
+  border: 20px solid var(--color-highlight);
+  border-bottom-color: transparent;
+}

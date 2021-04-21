@@ -1,11 +1,10 @@
 .app-header {
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: var(--color-highlight);
   padding: 12px;
 }
 
 .app-header__heading {
-  font-weight: 400;
-  font-size: 1.2rem;
+  margin: 0;
   text-align: center;
+  color: white;
 }
