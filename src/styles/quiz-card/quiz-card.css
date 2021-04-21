@@ -1,12 +1,13 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
   background-color: var(--color-primary);
   color: var(--color-black);
   padding: 15px;
   margin: 15px;
   font-family: 'Alegreya Sans', sans-serif;
+  position: relative;
 }
 
 .card__heading {
@@ -16,11 +17,12 @@
 }
 
 .card__tag-list {
-  list-style: square;
+  list-style: none;
   display: flex;
-  flex-flow: column wrap;
-  line-height: 2rem;
-  margin: 15px 0;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: smaller;
+  margin-left: -40px;
 }
 
 .card__tag {
@@ -33,9 +35,25 @@
   background-color: var(--color-highlight);
   color: var(--color-white);
   transition-duration: 0.4s;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card__button:hover {
   background-color: var(--color-hover);
   color: white;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  border: 25px solid lightgrey;
+  border-bottom-color: transparent;
+  height: 10px;
+}
+
+.card__bookmark--selected {
+  border: 20px solid var(--color-highlight);
+  border-bottom-color: transparent;
 }
