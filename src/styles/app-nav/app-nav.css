@@ -1,0 +1,7 @@
+.app-nav {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  height: 100vh;
+  color: black;
+}

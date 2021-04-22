@@ -1,9 +1,9 @@
 :root {
   --color-white: #fefefe;
   --color-black: #111;
-  --color-primary: #fcf3eb;
-  --color-highlight: #91bfae;
-  --color-secondary: #fde9dc;
-  --color-teritary: #cca183;
-  --color-hover: #4a7e6b;
+  --color-primary: #ffffff;
+  --color-highlight: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  --color-secondary: #13547a;
+  --color-teritary: #80d0c7;
+  --font-family: 'Roboto', sans-serif;
 }

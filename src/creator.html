@@ -8,13 +8,37 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header class="app-header">
+  <body class="body__create">
+    <header class="app-header app-header__create">
       <h1 class="app-header__heading">Create</h1>
     </header>
+
+    <main class="app-main">
+      <form class="creator__form">
+        <label class="creator_input" for="question">
+          <p class="creator_input--heading">Bitte gib hier Deine Frage ein:</p>
+          <textarea class="creator__input--text" cols="27" rows="5"></textarea>
+        </label>
+        <label class="creator_input" for="answer">
+          <p class="creator_input--heading">
+            Wie lautet die Antwort auf die Frage?
+          </p>
+          <textarea cols="27" rows="5"></textarea>
+        </label>
+        <label class="creator_input" for="tags">
+          <p class="creator_input--heading">Deiner Frage Tags hinzu:</p>
+          <input
+            id="creator__tags"
+            type="text"
+            placeholder="#Tag1, #Tag2, #Tag3"
+          />
+        </label>
+        <button class="card__button card__button--creator">Abschicken</button>
+      </form>
+    </main>
   </body>
 </html>

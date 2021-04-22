@@ -1,0 +1,31 @@
+.creator__form {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  font-family: var(--font-family);
+  max-width: 250px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-rows: 40% 40% 30% auto;
+}
+
+.creator_input {
+  padding: 15px;
+}
+
+textarea.creator__input--text {
+  display: inline;
+}
+
+.card__button--creator {
+  margin-bottom: 15px;
+}
+
+.creator_input--heading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.creator__tags {
+  font-family: var(--font-family);
+  padding-right: 60px;
+}
