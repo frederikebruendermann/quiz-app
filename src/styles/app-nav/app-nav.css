@@ -1,7 +1,16 @@
-.app-nav {
+.footer {
+  background: var(--color-highlight);
   display: flex;
-  flex-direction: row;
-  max-width: 600px;
-  height: 100vh;
-  color: black;
+  justify-content: space-around;
+  align-self: center;
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  bottom: 0;
+}
+
+a.footer__app-nav--button {
+  font-size: 35px;
+  text-decoration: none;
+  padding: 0px 20px;
 }
