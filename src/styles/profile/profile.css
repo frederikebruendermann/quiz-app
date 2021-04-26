@@ -1,0 +1,7 @@
+.app-profile__img {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  width: 40%;
+  font-family: var(--font-family);
+}
