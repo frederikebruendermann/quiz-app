@@ -9,6 +9,8 @@ const buttonProfile = document.querySelector('.app-nav__button-profile')
 const bookmark = document.querySelector('.card__bookmark')
 const pAnswer = document.querySelector('.card__answer')
 const buttonAnswer = document.querySelector('.button__answer')
+const buttonDarkmode = document.querySelector('.app-profile__darkmode')
+const body = document.querySelector('.body_darkmode')
 
 buttonHome.addEventListener('click', () => {
   boxHome.classList.remove('hidden')
@@ -62,4 +64,8 @@ bookmark.addEventListener('click', () => {
 
 buttonAnswer.addEventListener('click', () => {
   pAnswer.classList.toggle('hidden')
+})
+
+buttonDarkmode.addEventListener('click', () => {
+  body.classList.toggle('darkmode')
 })

@@ -6,4 +6,16 @@
   --color-secondary: #13547a;
   --color-teritary: #80d0c7;
   --font-family: 'Roboto', sans-serif;
+  --background-active: #f5f5f5;
+}
+
+body.darkmode {
+  background-color: rgba(0, 0, 0, 0.904);
+  --color-white: black;
+  --color-black: white;
+  --color-primary: #2e363f;
+  --color-highlight: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  --color-secondary: #13547a;
+  --color-teritary: #80d0c7;
+  --background-active: #181818;
 }
