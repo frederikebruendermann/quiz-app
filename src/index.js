@@ -6,6 +6,7 @@ const buttonHome = document.querySelector('.app-nav__button-home')
 const buttonBookmark = document.querySelector('.app-nav__button-bookmarks')
 const buttonCreate = document.querySelector('.app-nav__button-creator')
 const buttonProfile = document.querySelector('.app-nav__button-profile')
+const bookmark = document.querySelector('.card__bookmark')
 
 console.log(buttonHome)
 
@@ -53,4 +54,8 @@ buttonProfile.addEventListener('click', () => {
   buttonBookmark.classList.remove('active')
   buttonCreate.classList.remove('active')
   buttonProfile.classList.add('active')
+})
+
+bookmark.addEventListener('click', () => {
+  bookmark.classList.toggle('card__bookmark--selected')
 })
