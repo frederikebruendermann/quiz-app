@@ -9,8 +9,14 @@
   bottom: 0;
 }
 
-a.footer__app-nav--button {
+button {
   font-size: 35px;
   text-decoration: none;
+  background: transparent;
   padding: 0px 20px;
+  border: none;
+}
+
+.footer__app-nav button {
+  border-radius: 0 0 5px 5px;
 }
