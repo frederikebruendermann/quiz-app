@@ -7,8 +7,8 @@ const buttonBookmark = document.querySelector('.app-nav__button-bookmarks')
 const buttonCreate = document.querySelector('.app-nav__button-creator')
 const buttonProfile = document.querySelector('.app-nav__button-profile')
 const bookmark = document.querySelector('.card__bookmark')
-
-console.log(buttonHome)
+const pAnswer = document.querySelector('.card__answer')
+const buttonAnswer = document.querySelector('.button__answer')
 
 buttonHome.addEventListener('click', () => {
   boxHome.classList.remove('hidden')
@@ -58,4 +58,8 @@ buttonProfile.addEventListener('click', () => {
 
 bookmark.addEventListener('click', () => {
   bookmark.classList.toggle('card__bookmark--selected')
+})
+
+buttonAnswer.addEventListener('click', () => {
+  pAnswer.classList.toggle('hidden')
 })
