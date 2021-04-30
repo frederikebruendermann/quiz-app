@@ -1,7 +1,25 @@
+.app-profile {
+  display: grid;
+  place-items: center;
+  grid-gap: 26px;
+  overflow-y: scroll;
+  margin-bottom: 40px;
+}
+
+.app-profile__card {
+  display: grid;
+  gap: 4px;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  padding: 15px;
+  font-family: var(--font-family);
+  position: relative;
+  max-width: 250px;
+  margin-top: 40px;
+}
+
 .app-profile__img {
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  width: 40%;
+  width: 160px;
+  border-radius: 50%;
   font-family: var(--font-family);
 }

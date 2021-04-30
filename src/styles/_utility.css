@@ -6,3 +6,11 @@
   display: flex;
   justify-content: space-between;
 }
+
+.hidden {
+  display: none !important;
+}
+
+.active {
+  background: var(--background-active);
+}

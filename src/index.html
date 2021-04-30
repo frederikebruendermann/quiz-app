@@ -13,81 +13,155 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script defer type="module" src="./index.js"></script>
   </head>
-  <body>
-    <header class="app-header">
-      <h1 class="app-header__heading">Quiz App</h1>
-    </header>
-    <main class="app-main">
-      <section class="card">
-        <h2 class="card__question">Frage</h2>
-        <p class="card__answer">Wie viele Zähne hat ein Eisbär?</p>
-        <button class="card__button">Zeige mir die Antwort</button>
-        <p class="card__answer">Ein ausgewachsener Eisbär hat 42 Zähne.</p>
-        <ul class="card__tag-list">
-          <li>#Dental</li>
-          <li>#Animals</li>
-          <li>#HowMany</li>
-          <li>#Arktis</li>
-        </ul>
-        <div
-          role="button"
-          class="card__bookmark card__bookmark--selected"
-          aria-label="Add bookmark"
-        ></div>
-      </section>
+  <body class="body_darkmode">
+    <div class="box__home">
+      <header class="app-header">
+        <h1 class="app-header__heading">Quiz App</h1>
+      </header>
+      <main class="app-main">
+        <section class="card">
+          <h2 class="card__question">Frage</h2>
+          <p>Wie viele Zähne hat ein Eisbär?</p>
+          <button class="card__button button__answer">
+            Zeige mir die Antwort
+          </button>
+          <p class="card__answer hidden">
+            Ein ausgewachsener Eisbär hat 42 Zähne.
+          </p>
+          <ul class="card__tag-list">
+            <li>#Dental</li>
+            <li>#Animals</li>
+            <li>#HowMany</li>
+            <li>#Arktis</li>
+          </ul>
+          <div
+            role="button"
+            class="card__bookmark"
+            aria-label="Add bookmark"
+          ></div>
+        </section>
 
-      <section class="card">
-        <h2 class="card__question">Frage</h2>
-        <p class="card__answer">Wie viele Smarties passen in einen Smart?</p>
-        <button class="card__button">Zeige mir die Antwort</button>
-        <p class="card__answer">Etwa 7 Millionen Smarties.</p>
-        <ul class="card__tag-list">
-          <li>#Sweets</li>
-          <li>#Cars</li>
-          <li>#HowMany</li>
-          <li>#Numbers</li>
-        </ul>
-        <div
-          role="button"
-          class="card__bookmark"
-          aria-label="Add bookmark"
-        ></div>
-      </section>
+        <section class="card">
+          <h2 class="card__question">Frage</h2>
+          <p class="card__answer">Wie viele Smarties passen in einen Smart?</p>
+          <button class="card__button">Zeige mir die Antwort</button>
+          <p class="card__answer">Etwa 7 Millionen Smarties.</p>
+          <ul class="card__tag-list">
+            <li>#Sweets</li>
+            <li>#Cars</li>
+            <li>#HowMany</li>
+            <li>#Numbers</li>
+          </ul>
+          <div
+            role="button"
+            class="card__bookmark"
+            aria-label="Add bookmark"
+          ></div>
+        </section>
 
-      <section class="card">
-        <h2 class="card__question">Frage</h2>
-        <p class="card__answer">
-          Wie schnell fallen Schneeflocken auf die Erde?
-        </p>
-        <button class="card__button">Zeige mir die Antwort</button>
-        <p class="card__answer">Schneeflocken sinken mit 1,8 km/h.</p>
-        <ul class="card__tag-list">
-          <li>#Winter</li>
-          <li>#Snow</li>
-          <li>#HowFast</li>
-          <li>#Speed</li>
-        </ul>
-        <div
-          role="button"
-          class="card__bookmark"
-          aria-label="Add bookmark"
-        ></div>
-      </section>
-    </main>
+        <section class="card">
+          <h2 class="card__question">Frage</h2>
+          <p class="card__answer">
+            Wie schnell fallen Schneeflocken auf die Erde?
+          </p>
+          <button class="card__button">Zeige mir die Antwort</button>
+          <p class="card__answer">Schneeflocken sinken mit 1,8 km/h.</p>
+          <ul class="card__tag-list">
+            <li>#Winter</li>
+            <li>#Snow</li>
+            <li>#HowFast</li>
+            <li>#Speed</li>
+          </ul>
+          <div
+            role="button"
+            class="card__bookmark"
+            aria-label="Add bookmark"
+          ></div>
+        </section>
+      </main>
+    </div>
+
+    <div class="box__bookmarks hidden">
+      <header class="app-header">
+        <h1 class="app-header__heading">Bookmarks</h1>
+      </header>
+    </div>
+
+    <div class="box__creator hidden">
+      <header class="app-header">
+        <h1 class="app-header__heading">Add question</h1>
+      </header>
+      <main class="app-main">
+        <form class="creator__form">
+          <label class="creator_input" for="question">
+            <p class="creator_input--heading">
+              Bitte gib hier Deine Frage ein:
+            </p>
+            <textarea
+              class="creator__input--text"
+              cols="27"
+              rows="5"
+            ></textarea>
+          </label>
+          <label class="creator_input" for="answer">
+            <p class="creator_input--heading">
+              Wie lautet die Antwort auf die Frage?
+            </p>
+            <textarea cols="27" rows="5"></textarea>
+          </label>
+          <label class="creator_input" for="tags">
+            <p class="creator_input--heading">Deiner Frage Tags hinzu:</p>
+            <input
+              id="creator__tags"
+              type="text"
+              placeholder="#Tag1, #Tag2, #Tag3"
+            />
+          </label>
+          <button class="card__button card__button--creator">Abschicken</button>
+        </form>
+      </main>
+    </div>
+
+    <div class="box__profile hidden">
+      <header class="app-header">
+        <h1 class="app-header__heading">Profil</h1>
+      </header>
+      <main class="app-profile">
+        <div class="app-profile__card">
+          <img
+            class="app-profile__img"
+            src="../images/Bildschirmfoto 2021-04-12 um 17.33.26.png"
+            alt=""
+          />
+          <h2 class="app-profile__name">Frederike Bründermann</h2>
+          <p class="app-profile__about">
+            Hallöchen, <br />
+            ich bin Frederike & mag es, mich mit Freunden im Quiz zu messen.
+          </p>
+          <div class="app-profile__skills">
+            <h2>Meine Lieblingsthemen</h2>
+            <ul class="card__tag-list">
+              <li>#Music</li>
+              <li>#TrashTV</li>
+              <li>#Animals</li>
+              <li>#HowMany</li>
+            </ul>
+          </div>
+          <button class="card__button app-profile__logout">Logout</button>
+          <button class="card__button app-profile__darkmode">Darkmode</button>
+        </div>
+      </main>
+    </div>
+
     <footer class="footer">
-      <nav class="footer__app-nav">
-        <a class="footer__app-nav--button" href="../../index.html">🏠 </a>
-        <a class="footer__app-nav--button" href="../quiz-card/quiz-card.html"
-          >🔖</a
-        >
-        <a class="footer__app-nav--button" href="../creator/creator.html"
-          >📝
-        </a>
-        <a class="footer__app-nav--button" href="../profile/profile.html"
-          >👤
-        </a>
-      </nav>
+      <div class="footer__app-nav">
+        <button class="app-nav__button-home active">🏠</button>
+        <button class="app-nav__button-bookmarks">🔖</button>
+        <button class="app-nav__button-creator">📝</button>
+        <button class="app-nav__button-profile">👤</button>
+      </div>
     </footer>
   </body>
 </html>
